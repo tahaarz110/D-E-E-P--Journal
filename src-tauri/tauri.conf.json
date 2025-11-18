@@ -1,0 +1,77 @@
+{
+    "build": {
+      "beforeBuildCommand": "",
+      "beforeDevCommand": "",
+      "devPath": "../dist",
+      "distDir": "../dist"
+    },
+    "package": {
+      "productName": "Meta-Driven Trading Journal",
+      "version": "0.1.0"
+    },
+    "tauri": {
+      "allowlist": {
+        "all": false,
+        "shell": {
+          "all": false,
+          "open": true
+        },
+        "fs": {
+          "all": false,
+          "readFile": true,
+          "writeFile": true,
+          "readDir": true,
+          "copyFile": true,
+          "createDir": true,
+          "removeDir": true,
+          "removeFile": true,
+          "renameFile": true
+        },
+        "path": {
+          "all": true
+        },
+        "os": {
+          "all": false,
+          "platform": true
+        }
+      },
+      "bundle": {
+        "active": true,
+        "category": "DeveloperTool",
+        "copyright": "",
+        "deb": {
+          "depends": []
+        },
+        "externalBin": [],
+        "icon": [
+          "icons/32x32.png",
+          "icons/128x128.png",
+          "icons/128x128@2x.png",
+          "icons/icon.icns",
+          "icons/icon.ico"
+        ],
+        "identifier": "com.trading.journal",
+        "longDescription": "",
+        "macOS": {
+          "frameworks": [],
+          "minimumSystemVersion": "",
+          "useBootstrapper": false
+        },
+        "resources": [],
+        "shortDescription": "",
+        "targets": "all"
+      },
+      "security": {
+        "csp": null
+      },
+      "windows": [
+        {
+          "fullscreen": false,
+          "height": 800,
+          "resizable": true,
+          "title": "Meta-Driven Trading Journal",
+          "width": 1200
+        }
+      ]
+    }
+  }
